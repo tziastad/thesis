@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\Desktop\\Start Diplomatiki\\HelloProject"
+		},
+		{
+			"name": "220413-123146-mbed-rtos-blink-baremetal",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"condition_variable": "cpp",
+			"future": "cpp"
+		}
+	}
+}

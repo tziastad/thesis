@@ -1,0 +1,26 @@
+.pio\build\frdm_k64f\FrameworkMbeddrivers\usb\source\USBDevice.o: \
+ C:\Users\Dora\.platformio\packages\framework-mbed\drivers\usb\source\USBDevice.cpp \
+ .pio\build\frdm_k64f/mbed_config.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/drivers/usb/include/usb/internal/USBDevice.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/drivers/usb/include/usb/internal/USBDevice_Types.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/hal/usb/include/usb/USBPhy.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/hal/usb/include/usb/USBPhyTypes.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/hal/usb/include/usb/USBPhyEvents.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_critical.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/Callback.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/CXXSUP~1/mstd_cstddef \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/CXXSUP~1/mstd_new \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_assert.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_toolchain.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/CXXSUP~1/mstd_type_traits \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/CXXSUP~1/mstd_functional \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/CXXSUP~1/mstd_memory \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/CXXSUP~1/mstd_utility \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/CXXSUP~1/mstd_iterator \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/drivers/usb/include/usb/internal/USBDescriptor.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/hal/usb/include/usb/usb_phy_api.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/hal/usb/include/usb/USBPhy.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_assert.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_error.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_retarget.h

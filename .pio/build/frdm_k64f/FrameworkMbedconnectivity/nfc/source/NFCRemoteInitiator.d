@@ -1,0 +1,33 @@
+.pio\build\frdm_k64f\FrameworkMbedconnectivity\nfc\source\NFCRemoteInitiator.o: \
+ C:\Users\Dora\.platformio\packages\framework-mbed\connectivity\nfc\source\NFCRemoteInitiator.cpp \
+ .pio\build\frdm_k64f/mbed_config.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/include/nfc/NFCRemoteInitiator.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/include/nfc/NFCDefinitions.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/nfc_errors.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/include/nfc/NFCRemoteEndpoint.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/include/nfc/NFCNDEFCapable.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/Span.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_assert.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_toolchain.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/ndef/ndef.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/nfc_common.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/nfc_errors.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/platform/nfc_debug.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_macros.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_reader.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_builder.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_stream.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_reader.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_builder.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/tech/iso7816/iso7816_app.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/tech/iso7816/iso7816.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/transceiver/protocols.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/tech/isodep/isodep_target.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/transceiver/transceiver.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/transceiver/protocols.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/platform/nfc_transport.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/platform/nfc_scheduler.h \
+ C:\Users\Dora\PLATFO~1\packages\FRAMEW~1/CONNEC~1/nfc/LIBRAR~1/stack/tech/isodep/isodep.h
