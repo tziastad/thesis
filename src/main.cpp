@@ -6,6 +6,7 @@
 #include "MFRC522.h"
 #include "EthernetInterface.h"
 #include "pk.h"
+#include "mbed_config.h"
 #include <string.h>
 #include <stdio.h>
 #include "mbedtls/error.h"
@@ -265,7 +266,7 @@ int askForPublicKey(TCPSocket *socket)
   return communication_failed;
 }
 
-void generateAndEncryptAesKey(unsigned char key[], char public_key[],size_t public_key_len,size_t private_key_len)
+void generateAndEncryptAesKey(unsigned char aes_key[], char public_key[],size_t public_key_len,size_t aes_key_len)
 {
   mbedtls_ctr_drbg_context ctr_drbg;
   mbedtls_entropy_context entropy;
@@ -284,13 +285,13 @@ void generateAndEncryptAesKey(unsigned char key[], char public_key[],size_t publ
     printf(" failed\n ! mbedtls_ctr_drbg_init returned -0x%04x\n", -ret);
   }
 
-  if ((ret = mbedtls_ctr_drbg_random(&ctr_drbg, key, 32)) != 0)
+  if ((ret = mbedtls_ctr_drbg_random(&ctr_drbg, aes_key, 32)) != 0)
   {
     printf(" failed\n ! mbedtls_ctr_drbg_random returned -0x%04x\n", -ret);
   }
 
   printf("Aes key is: ");
-  print_array(key, 32);
+  print_array(aes_key, 32);
   //printf("key len:%d \n",private_key_len );
  // printf("public_key  [%.*s]\n", strstr(public_key, "\r\n") - public_key, public_key);
   print_byte_array(public_key,162);
@@ -303,23 +304,24 @@ void generateAndEncryptAesKey(unsigned char key[], char public_key[],size_t publ
   {
     printf(" failed\n  ! mbedtls_pk_parse_public_key returned -0x%04x\n", -ret);
   }
+  
 
   
-  /*
+  
   unsigned char buf[MBEDTLS_MPI_MAX_SIZE];
   size_t olen = 0;
 
   printf("\n  . Generating the encrypted value");
   fflush(stdout);
 
-  if ((ret = mbedtls_pk_encrypt(&pk, key, 32,buf, &olen, sizeof(buf),mbedtls_ctr_drbg_random, &ctr_drbg)) != 0)
+  if ((ret = mbedtls_pk_encrypt(&pk, aes_key, aes_key_len,buf, &olen, sizeof(buf),mbedtls_ctr_drbg_random, &ctr_drbg)) != 0)
   {
     printf(" failed\n  ! mbedtls_pk_encrypt returned -0x%04x\n", -ret);
-  }*/
+  }
 
 }
 
-void recievePublicKey(TCPSocket *socket, char public_key[], int n)
+void receivePublicKey(TCPSocket *socket, char public_key[], int n)
 {
   char rbuffer[n];
   memset(rbuffer, 0, n); // clear the previous message
@@ -378,6 +380,7 @@ int main()
     }
 
     //------------CLIENT ASK FOR PUBLIC KEY------------
+    //--
 
     communication_failed = askForPublicKey(&socket);
 
@@ -391,7 +394,7 @@ int main()
     char public_key[public_key_length];
     size_t public_key_size = sizeof public_key / sizeof public_key[0];
 
-    recievePublicKey(&socket, public_key, public_key_length);
+    receivePublicKey(&socket, public_key, public_key_length);
 
     //print_byte_array(public_key,162);
     // printf("pub key is: [%.*s]\n", strstr(public_key, "\r\n") - public_key, public_key);
@@ -399,8 +402,8 @@ int main()
     //------------------------------------------------------
 
     unsigned char aes_key[32];
-    size_t private_key_size = sizeof aes_key / sizeof aes_key[0];
-    generateAndEncryptAesKey(aes_key, public_key,public_key_size,private_key_size);
+    size_t aes_key_size = sizeof aes_key / sizeof aes_key[0];
+    generateAndEncryptAesKey(aes_key, public_key,public_key_size,aes_key_size);
 
 
     //----------CLIENT SEND DEVICE ID--------------------

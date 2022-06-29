@@ -24,6 +24,7 @@
 // Configuration parameters
 #define MBED_CONF_ALT1250_PPP_BAUDRATE                                        115200                                                                                           // set by library:ALT1250_PPP
 #define MBED_CONF_ALT1250_PPP_PROVIDE_DEFAULT                                 0                                                                                                // set by library:ALT1250_PPP
+#define MBED_CONF_APP_MAIN_THREAD_STACK_SIZE                                  8192                                                                                             // set by application
 #define MBED_CONF_ATMEL_RF_ASSUME_SPACED_SPI                                  0                                                                                                // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_FULL_SPI_SPEED                                     7500000                                                                                          // set by library:atmel-rf
 #define MBED_CONF_ATMEL_RF_FULL_SPI_SPEED_BYTE_SPACING                        250                                                                                              // set by library:atmel-rf
@@ -294,7 +295,6 @@
 #define MBED_CONF_QUECTEL_UG96_PROVIDE_DEFAULT                                0                                                                                                // set by library:QUECTEL_UG96
 #define MBED_CONF_RM1000_AT_BAUDRATE                                          230400                                                                                           // set by library:RM1000_AT
 #define MBED_CONF_RM1000_AT_PROVIDE_DEFAULT                                   0                                                                                                // set by library:RM1000_AT
-#define MBED_CONF_RTOS_API_MAIN_STACK_SIZE                                    8192                                                                                             // set by library:rtos-api
 #define MBED_CONF_RTOS_API_PRESENT                                            1                                                                                                // set by library:rtos-api
 #define MBED_CONF_RTOS_EVFLAGS_NUM                                            0                                                                                                // set by library:rtos
 #define MBED_CONF_RTOS_IDLE_THREAD_STACK_SIZE                                 512                                                                                              // set by library:rtos
@@ -387,12 +387,18 @@
 #define MBED_LFS_LOOKAHEAD                                                    512                                                                                              // set by library:littlefs
 #define MBED_LFS_PROG_SIZE                                                    64                                                                                               // set by library:littlefs
 #define MBED_LFS_READ_SIZE                                                    64                                                                                               // set by library:littlefs
-#define MBED_STACK_DUMP_ENABLED                                               0                                                                                                // set by library:platform
+#define MBED_STACK_DUMP_ENABLED                                               1                                                                                                // set by library:platform
+#define MBED_STACK_STATS_ENABLED                                              1                                                                                                // set by library:platform
 #define MEM_ALLOC                                                             malloc                                                                                           // set by library:mbed-trace
 #define MEM_FREE                                                              free                                                                                             // set by library:mbed-trace
 #define PPP_DEBUG                                                             0                                                                                                // set by library:ppp
 // Macros
 #define MBEDTLS_CIPHER_MODE_CTR                                                                                                                                                // defined by library:SecureStore
+#define MBED_CONF_RTOS_MAIN_THREAD_STACK_SIZE                                 8192                                                                                             // defined by application
+#define MBED_CONF_RTOS_THREAD_STACK_SIZE                                      8192                                                                                             // defined by application
+#define MBED_HEAP_STATS_ENABLED                                               1                                                                                                // defined by application
+#define MBED_MEM_TRACING_ENABLED                                              1                                                                                                // defined by application
+#define MBED_STACK_STATS_ENABLED                                              1                                                                                                // defined by application
 #define NSAPI_PPP_AVAILABLE                                                   (MBED_CONF_PPP_ENABLED || MBED_CONF_LWIP_PPP_ENABLED)                                            // defined by library:ppp
 #define NSDYNMEM_TRACKER_ENABLED                                              MBED_CONF_NANOSTACK_LIBSERVICE_NSDYNMEM_TRACKER_ENABLED                                          // defined by library:nanostack-libservice
 #define NS_USE_EXTERNAL_MBED_TLS                                                                                                                                               // defined by library:nanostack
